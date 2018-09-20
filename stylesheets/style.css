@@ -42,7 +42,7 @@ body {
 }
 #header, #sidebar,#content, #footer{
 /*background-color:purple;*/
-	background-color:rgba(240,13,13,0.75);
+	background-color:rgba(92,8,154,0.66);
 margin-bottom: 4px;
 border: double;
 border-radius: 8px;
