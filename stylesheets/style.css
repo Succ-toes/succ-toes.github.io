@@ -1,0 +1,72 @@
+/* CSS Document */
+/*.........................
+Basic Structure
+...........................  */
+#wrapper {
+	width: 960px;
+	padding: 50px;
+	nargin: 20px auto;
+	
+}
+#header {
+    height: 100px;
+	
+}
+#sidebar {
+	float:left;
+	width: 300px;
+	
+}
+#content {
+	float: right; 
+	width: 600px;
+	
+}
+#footer {
+    clear: both;	
+}
+/*.........................                                                                                                                             
+COLORS AND FONTS                                         
+color.adobe.com
+#FFD4BC
+#B28165
+#BCFFFE
+#D5FFFE
+#5BB2B1
+...........................  */
+body {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	color:rgba(251,115,16,0.87);
+	background-image: url("../images/poro.jpg");
+	background-size: cover;
+}
+#header, #sidebar,#content, #footer{
+/*background-color:purple;*/
+	background-color:rgba(240,13,13,0.75);
+margin-bottom: 4px;
+border: double;
+border-radius: 8px;
+border-color: grey;
+padding-left: 4px;
+padding-right: 4px;
+} 
+/*______________________________
+
+RESPONISVE DESIGN
+
+________________________________*/
+@media screen and (max-width:980px) {
+	
+}
+@media screen and (max-width:700px){
+	
+}
+@media screen and (max-width:480px){
+	
+}
+/*Phones*/
+@media only screen
+	and (min-device-width:320px)
+	and (max-device-width:568px){
+		
+}
