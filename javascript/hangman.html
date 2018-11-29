@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+<script type="application/javascript">
+	//create an array of words
+	var words= [
+		"whale",
+		"vegan",
+		"shark",
+		"broccoli",
+		"spring"
+		];
+		//pick random word
+	var word =words[Math.floor(Math.random()*words.length)];
+	//Show the player their progress
+	var answerArray= [];
+	for(var i= 0;i < word.length; i++) {
+		answerArray[i] = "_";
+	}
+	var remainingLetters = word.length;
+	
+	while(remainingLetters > 0) {
+		alert(answerArray.join(" "));
+		//Take input from the player
+		var guess=prompt("Guess a letter, or click Cancel to stop playing.");
+		if(guess===null) {
+			//exit game loop
+			break;
+		} else if (guess.length !==1) {
+			alert("Please enter a single letter");
+		}else{
+			//Update the game state wth the guess
+			for(var j = 0;j < word.length;j++){
+				if (word[j] === guess){
+					answerArray[j] = guess;
+					remainingLetters--;
+				}
+			}
+		}
+	}
+
+	alert(answerArray.join(" "));
+	alert("Good job! The answer was " + word);
+	
+	
+	</script>
+	
+<body>
+</body>
+</html>

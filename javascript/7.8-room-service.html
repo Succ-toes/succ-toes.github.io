@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>7.8 - Room Service</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		var hour = Number(prompt("What hour is it? ie. Enter 7 for 7am, 15 for 3pm "));
+		// bonus + 2, automatically detect what time it is instead of asking
+		
+	
+		switch (hour) {
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+				alert("You can find a continental breakfast served in the lobby.");
+				break;
+			case 11:
+			case 12:
+			case 13:
+				alert("The restaurant is open.")
+				break;
+			case 16:
+			case 17:
+			case 18:
+			case 19:
+				alert("You can order room service or visit the restaurant.");
+				break;
+			default:
+				alert("Please try again. Enter 7 for 7am, 15 for 3pm");
+				var c=confirm("Would you like to make an reservation?");
+				
+					
+				}
+				
+		}
+		
+
+	</script>
+</body>
+</html>
