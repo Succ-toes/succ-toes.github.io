@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.9 Fab Fabrics</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		function calculateSubtotal(numberOfRolls) {
+			return numberOfRolls * 20;
+		}
+alert("Each roll's color costs $20");
+		</script>
+			<table border="1">
+				<caption>Fab Fabrics</caption>
+				<tr>
+					<th>Color</th>
+					<th>Quantity</th>
+					<th>Cost</th>
+					</tr>
+						<tr>
+							<script type="text/javascript">
+							while(true) {
+								// ask the user what color roll they want
+								var color = prompt("What color roll do you want?");
+
+								// ask the user how many rolls they want
+								var number = prompt("How many rolls do you want?");
+								// print the result using your function
+								 //document.write("$" + (calculateSubtotal(number)));
+								 document.write("<td>" + color + "<td>" + number + "<td> $" + (calculateSubtotal(number)));
+								 document.write("<td>");
+								 document.write("<td>");
+								var c = confirm("Do you want to continue?");
+								if(!c) {
+									break;
+								}
+							}
+							</script>
+							<!--
+								<td>Blue</td>
+								<td>2</td>
+								<td>$40</td>
+							</tr>
+						-->
+				</tr>
+			</tbody>
+			</table>
+</body>
+</html>
